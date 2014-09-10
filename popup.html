@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Getting Started Extension's Popup</title>
+		<style>
+		body 
+		{
+			min-width: 400px;
+			min-height: 220px;
+			overflow-x: hidden;
+			opacity: 0.9;
+			background-image: url('background.jpg');
+		}
+
+		img 
+		{
+			float: left;
+			margin: 5px;
+			border: 2px solid black;
+			width: 60px;
+			height: 60px;
+		}
+		#roll_label
+		{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			color: #2E5C00;
+			display: inline-block;
+			float: left;
+			clear: left;
+			width: 180px;
+			text-align: right;
+		}
+		#password_label
+		{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			color: #2E5C00;
+			display: inline-block;
+			float: left;
+			clear: left;
+			width: 180px;
+			text-align: right;
+		}
+		#security_label
+		{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			color: #2E5C00;
+			display: inline-block;
+			float: left;
+			clear: left;
+			width: 180px;
+			text-align: right;
+			font-size: 80%;
+		}
+		#logo_label
+		{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			color: #2E5C00;
+			font-size: 150%;
+			display: inline-block;
+			float: center;
+			width: 250px;
+			margin-left: 20px;
+			text-align: right;
+		}
+		#login_button
+		{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			font-size: 102%;
+			color: #2E5C00;
+			background-color: rgba(0,0,0,0.1);	
+			display: inline-block;
+			float: left;
+		}
+		#roll
+		{
+			background-color: rgba(0,0,0,0.1);	
+			display: inline-block;
+			float: left;
+		}
+		#password
+		{
+			background-color: rgba(0,0,0,0.1);	
+			display: inline-block;
+			float: left;
+		}
+		#security
+		{
+			background-color: rgba(0,0,0,0.1);	
+			display: inline-block;
+			float: left;
+		}
+		#centered_div
+		{
+			position:absolute;
+			width:100px;
+			height:50px;
+			top:70%;
+			left:45%;
+		}
+		#info_label
+		{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			font-size: 70%;
+			float: right;
+			clear: left;
+			margin-top: 40px;
+		}
+		#contact_label
+		{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+			font-size: 70%;
+			float: right;
+			clear: left;
+			margin-top: 40px;
+			margin-left: 5px;
+		}
+		</style>
+		<script type="text/javascript"  src="popup.js"></script>
+	</head>
+	<body>
+		<form id="login_form" onsubmit="return Login()">
+			<img src="iitkgp.jpg" alt="Smiley face" align="left"><br>
+			<label id="logo_label" align="center">IITKGP ERP Auto Login</label>
+			<label id="roll_label">Roll:</label> <input type="password" name="roll" id="roll"><br>
+			<label id="password_label">Password:</label> <input type="password" name="password" id="password"><br>
+			<label id="security_label">Answer to any one security question:</label> <input type="password" name="security" id="security"><br>
+			<div id="centered_div">
+				<button id="login_button" type="button">Login</button>
+			</div>
+		</form>
+		<div>
+		  <label id="contact_label"><a id="mailer" href="mailto:shambhuprasad58@gmail.com">Mail me</a>.</label>
+		  <label id="info_label">By: Shambhu Prasad </label><br>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "IIT Kgp ERP Auto Login",
+  "description": "This extension serves to users of IIT Kharagpur ERP system. Store the login credentials and login automatically everytime.",
+  "version": "0.0.4",
+
+  "permissions": [
+    "http://erp.iitkgp.ernet.in/",
+	"https://erp.iitkgp.ernet.in/",
+	"cookies",
+	"tabs",
+	"storage",
+    "http://*/", 
+    "https://*/"
+  ],
+  "browser_action": {
+    "default_icon": "icon_opt.png",
+    "default_popup": "popup.html"
+  }
+}
